@@ -1,6 +1,6 @@
 <?php
         // Translations can be filed in the /languages/ directory
-        load_theme_textdomain( 'html5reset', TEMPLATEPATH . '/languages' );
+        load_theme_textdomain( 'dlredden', TEMPLATEPATH . '/languages' );
  
         $locale = get_locale();
         $locale_file = TEMPLATEPATH . "/languages/$locale.php";
@@ -32,9 +32,9 @@
     
     if (function_exists('register_sidebar')) {
     	register_sidebar(array(
-    		'name' => __('Sidebar Widgets','html5reset' ),
+    		'name' => __('Sidebar Widgets','dlredden' ),
     		'id'   => 'sidebar-widgets',
-    		'description'   => __( 'These are widgets for the sidebar.','html5reset' ),
+    		'description'   => __( 'These are widgets for the sidebar.','dlredden' ),
     		'before_widget' => '<div id="%1$s" class="widget %2$s">',
     		'after_widget'  => '</div>',
     		'before_title'  => '<h2>',
